@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="250cm"
+   height="150cm"
+   viewBox="0 0 250 150"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="rich-architecture.svg"
+   inkscape:export-filename="rich-architecture.png"
+   inkscape:export-xdpi="10.257512"
+   inkscape:export-ydpi="10.257512"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#636363"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.092203283"
+     inkscape:cx="2998.8086"
+     inkscape:cy="2922.8894"
+     inkscape:window-width="1920"
+     inkscape:window-height="1015"
+     inkscape:window-x="-9"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer9" />
+  <defs
+     id="defs2">
+    <rect
+       x="490.81586"
+       y="594.34735"
+       width="993.13525"
+       height="208.98019"
+       id="rect1499" />
+    <rect
+       x="490.81586"
+       y="594.34735"
+       width="1042.9836"
+       height="205.14569"
+       id="rect2159" />
+    <rect
+       x="490.81586"
+       y="594.34735"
+       width="1042.9836"
+       height="205.14569"
+       id="rect2823" />
+    <rect
+       x="490.81586"
+       y="594.34735"
+       width="1042.9836"
+       height="205.14569"
+       id="rect3080" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Background"
+     style="display:inline">
+    <g
+       inkscape:groupmode="layer"
+       id="layer9"
+       inkscape:label="Loops"
+       style="display:inline">
+      <path
+         style="display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.7143;stroke-dasharray:none;stroke-opacity:1"
+         id="path225"
+         transform="rotate(-9.6994769)"
+         inkscape:label="Direct Loop"
+         sodipodi:type="arc"
+         sodipodi:cx="70.528809"
+         sodipodi:cy="87.789154"
+         sodipodi:rx="66.556549"
+         sodipodi:ry="66.556549"
+         sodipodi:start="0"
+         sodipodi:end="4.2179361"
+         sodipodi:open="true"
+         sodipodi:arc-type="arc"
+         d="M 137.08536,87.789154 A 66.556549,66.556549 0 0 1 81.448903,153.44375 66.556549,66.556549 0 0 1 7.5556326,109.33337 66.556549,66.556549 0 0 1 38.944389,29.204184" />
+      <path
+         style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.70615;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="path3086"
+         inkscape:label="Direct Secondary Loop"
+         sodipodi:type="arc"
+         sodipodi:cx="188.25722"
+         sodipodi:cy="86.203629"
+         sodipodi:rx="28.733896"
+         sodipodi:ry="28.301159"
+         sodipodi:start="0.81099441"
+         sodipodi:end="0.80667569"
+         sodipodi:open="true"
+         sodipodi:arc-type="arc"
+         d="m 208.04849,106.72119 a 28.733896,28.301159 0 0 1 -40.60118,-1.00221 28.733896,28.301159 0 0 1 0.9737,-39.990772 28.733896,28.301159 0 0 1 40.60328,0.915854 28.733896,28.301159 0 0 1 -0.88602,39.992748" />
+      <circle
+         style="display:inline;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:1.7143;stroke-dasharray:1.7143, 1.7143;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle3609"
+         cx="70.528809"
+         cy="87.789154"
+         transform="rotate(-9.6994771)"
+         r="66.556549"
+         inkscape:label="Indirect Loop" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="Arrows"
+       style="display:inline">
+      <path
+         sodipodi:type="star"
+         style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+         id="path1898"
+         inkscape:flatsided="false"
+         sodipodi:sides="3"
+         sodipodi:cx="9.0294456"
+         sodipodi:cy="29.726151"
+         sodipodi:r1="7.0669403"
+         sodipodi:r2="3.5334702"
+         sodipodi:arg1="-2.2545056"
+         sodipodi:arg2="-1.2073081"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 4.5654508,24.247611 5.7202732,2.175938 5.720273,2.175938 -4.744554,3.865933 -4.7445544,3.865933 -0.9757188,-6.041871 z"
+         inkscape:transform-center-x="-1.4616728"
+         inkscape:transform-center-y="0.65542906"
+         transform="matrix(1.1634958,0,0,1.1634958,13.656677,11.372607)"
+         inkscape:label="First Station" />
+      <path
+         sodipodi:type="star"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+         id="path2165"
+         inkscape:flatsided="false"
+         sodipodi:sides="3"
+         sodipodi:cx="18.971979"
+         sodipodi:cy="69.496292"
+         sodipodi:r1="5.1831207"
+         sodipodi:r2="2.5915601"
+         sodipodi:arg1="0.8685394"
+         sodipodi:arg2="1.9157369"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 22.319976,73.453015 -4.224309,-1.517817 -4.224309,-1.517817 3.426623,-2.89945 3.426623,-2.899451 0.797685,4.417268 z"
+         inkscape:transform-center-x="1.4951191"
+         inkscape:transform-center-y="-0.78577191"
+         transform="matrix(1.7061429,0,0,1.7061429,3.5639997,0.9539548)"
+         inkscape:label="Second Station" />
+      <path
+         sodipodi:type="star"
+         style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+         id="path2834"
+         inkscape:flatsided="false"
+         sodipodi:sides="3"
+         sodipodi:cx="80.96064"
+         sodipodi:cy="65.945389"
+         sodipodi:r1="5.8545456"
+         sodipodi:r2="2.9272728"
+         sodipodi:arg1="-1.0838971"
+         sodipodi:arg2="-0.036699544"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 83.69991,60.771212 0.186032,5.066771 0.186031,5.066772 -4.480968,-2.372278 -4.480968,-2.372277 4.294936,-2.694494 z"
+         inkscape:transform-center-x="-1.9062786"
+         inkscape:transform-center-y="0.65719639"
+         transform="matrix(0.98977186,1.3897033,-1.3897033,0.98977186,148.09543,-143.63236)"
+         inkscape:label="Third Station" />
+      <path
+         sodipodi:type="star"
+         style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         id="path3093"
+         inkscape:flatsided="false"
+         sodipodi:sides="3"
+         sodipodi:cx="3435.7112"
+         sodipodi:cy="1832.8905"
+         sodipodi:r1="237.86259"
+         sodipodi:r2="118.9313"
+         sodipodi:arg1="1.5385494"
+         sodipodi:arg2="2.585747"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 3443.3802,2070.6294 -108.6957,-174.9834 -108.6958,-174.9834 205.888,-6.6416 205.8879,-6.6415 -97.1922,181.625 z"
+         transform="matrix(0.0335484,-0.02121244,0.02336896,0.03695905,9.8494615,108.5498)"
+         inkscape:transform-center-x="1.9227738"
+         inkscape:transform-center-y="-0.15042981"
+         inkscape:label="Third Station-Outside" />
+      <path
+         sodipodi:type="star"
+         style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-dasharray:none;stroke-opacity:1"
+         id="path3093-4"
+         inkscape:flatsided="false"
+         sodipodi:sides="3"
+         sodipodi:cx="3435.7112"
+         sodipodi:cy="1832.8905"
+         sodipodi:r1="237.86259"
+         sodipodi:r2="118.9313"
+         sodipodi:arg1="1.5385494"
+         sodipodi:arg2="2.585747"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 3443.3802,2070.6294 -108.6957,-174.9834 -108.6958,-174.9834 205.888,-6.6416 205.8879,-6.6415 -97.1922,181.625 z"
+         transform="matrix(-0.03267386,0.02253624,-0.02482733,-0.0359956,367.93994,59.024735)"
+         inkscape:transform-center-x="-1.7429113"
+         inkscape:transform-center-y="0.34337496"
+         inkscape:label="Outside-Third Station" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer8"
+       inkscape:label="Text"
+       style="display:inline">
+      <text
+         xml:space="preserve"
+         style="font-size:4.51556px;text-align:center;text-anchor:middle;white-space:pre;inline-size:22.8144;display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+         x="4.869813"
+         y="33.277058"
+         id="text1908"
+         transform="matrix(1.7061429,0,0,1.7061429,36.712645,-7.6357229)"
+         inkscape:label="First Connection"><tspan
+           x="4.869813"
+           y="33.277058"
+           id="tspan3875">Sends<tspan
+   y="33.277058"
+   id="tspan3877"> </tspan></tspan><tspan
+           x="4.869813"
+           y="38.921509"
+           id="tspan3879">Animal to</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:7.7042px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.170615;stroke-dasharray:none;stroke-opacity:1"
+         x="56.185116"
+         y="111.56216"
+         id="text2793"
+         inkscape:label="Second Connection"><tspan
+           sodipodi:role="line"
+           id="tspan2791"
+           style="font-size:7.7042px;stroke-width:0.170615"
+           x="56.185116"
+           y="111.56216">Sends </tspan><tspan
+           sodipodi:role="line"
+           style="font-size:7.7042px;stroke-width:0.170615"
+           x="56.185116"
+           y="121.19241"
+           id="tspan2799">trays to</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:5.23644px;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.170615;stroke-dasharray:none;stroke-opacity:1"
+         x="166.761"
+         y="23.089098"
+         id="text3050"
+         inkscape:label="Third Connection"><tspan
+           sodipodi:role="line"
+           id="tspan3048"
+           style="stroke-width:0.170615"
+           x="166.761"
+           y="23.089098">Checks Registry No. </tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.170615"
+           x="166.761"
+           y="29.634647"
+           id="tspan3052">of the flawed animal</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:5.23644px;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="162.84781"
+         y="119.66085"
+         id="text3617"
+         inkscape:label="Third-Outside Connection"><tspan
+           sodipodi:role="line"
+           id="tspan3615"
+           style="font-size:5.23644px;stroke-width:0.1;stroke-dasharray:none"
+           x="162.84781"
+           y="119.66085">Sends and </tspan><tspan
+           sodipodi:role="line"
+           style="font-size:5.23644px;stroke-width:0.1;stroke-dasharray:none"
+           x="162.84781"
+           y="126.2064"
+           id="tspan3621">Distributes</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:5.23644px;stroke-width:0.1;stroke-dasharray:none"
+           x="162.84781"
+           y="132.75195"
+           id="tspan3619"> the packages</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:5.23645px;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="225.26085"
+         y="53.80434"
+         id="text3625"
+         inkscape:label="Outsuide-Third Connection"><tspan
+           sodipodi:role="line"
+           id="tspan3623"
+           style="stroke-width:0.1"
+           x="225.26085"
+           y="53.80434">Detects a Problem</tspan><tspan
+           sodipodi:role="line"
+           style="stroke-width:0.1"
+           x="225.26085"
+           y="60.349903"
+           id="tspan3627">Initiates a recall</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 1"
+     style="display:inline">
+    <g
+       id="g2135"
+       inkscape:label="First Station"
+       transform="matrix(1.7061429,0,0,1.7061429,0.10208467,-7.3546419)">
+      <ellipse
+         style="display:inline;fill:#4a4a4a;fill-opacity:1;stroke-width:0.0380524"
+         id="path111"
+         cx="24.965216"
+         cy="18.723909"
+         rx="16.643476"
+         ry="9.2543468"
+         inkscape:label="Bubble" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.06917px;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+         x="24.653429"
+         y="18.566162"
+         id="text1912"
+         inkscape:label="Description"><tspan
+           sodipodi:role="line"
+           style="font-size:3.06917px;stroke:#ffffff;stroke-width:0.1;stroke-opacity:1"
+           x="24.653429"
+           y="18.566162"
+           id="tspan1914">· Weights the animal</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:3.06917px;stroke:#ffffff;stroke-width:0.1;stroke-opacity:1"
+           x="24.653429"
+           y="22.402624"
+           id="tspan1918">· Gives Registry No.</tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.02645833,0,0,0.02645833,-1.1413626,-4.6922682)"
+         id="text1497"
+         style="font-size:146.667px;text-align:center;white-space:pre;shape-inside:url(#rect1499);shape-padding:21.0897;display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+         x="329.71875"
+         y="0"
+         inkscape:label="First Station"><tspan
+           x="537.92962"
+           y="749.24626"
+           id="tspan3883"><tspan
+             style="stroke:#ffffff"
+             id="tspan3881">First Station</tspan></tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g2157"
+     inkscape:label="Layer 2"
+     style="display:inline"
+     transform="translate(-7.6090838,39.364327)">
+    <g
+       id="g2155"
+       inkscape:label="Second Station"
+       transform="matrix(1.7061429,0,0,1.7061429,-5.2710173,20.442199)">
+      <ellipse
+         style="display:inline;fill:#4a4a4a;fill-opacity:1;stroke-width:0.0380524"
+         id="ellipse2141"
+         cx="24.965216"
+         cy="18.723909"
+         rx="16.643476"
+         ry="9.2543468"
+         inkscape:label="Bubble" />
+      <text
+         xml:space="preserve"
+         style="font-size:2.36361px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+         x="25.059246"
+         y="19.174889"
+         id="text2153"
+         inkscape:label="Description"><tspan
+           sodipodi:role="line"
+           style="font-size:2.36361px;stroke:#ffffff;stroke-width:0.1;stroke-opacity:1"
+           x="25.059246"
+           y="19.174889"
+           id="tspan2151">Processes the animal into </tspan><tspan
+           sodipodi:role="line"
+           style="font-size:2.36361px;stroke:#ffffff;stroke-width:0.1;stroke-opacity:1"
+           x="25.059246"
+           y="22.1294"
+           id="tspan2163">trays made out of parts</tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.02645833,0,0,0.02645833,-1.5471804,-3.4748152)"
+         id="text2145"
+         style="font-size:133.333px;text-align:center;white-space:pre;shape-inside:url(#rect2159);shape-padding:5.7517;display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+         x="329.71875"
+         y="0"
+         inkscape:label="Second Station"><tspan
+           x="505.57063"
+           y="721.74334"
+           id="tspan3887"><tspan
+             style="stroke:#ffffff"
+             id="tspan3885">Second Station</tspan></tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g2821"
+     inkscape:label="Layer 3"
+     style="display:inline"
+     transform="translate(44.944321,58.742127)">
+    <g
+       id="g2819"
+       inkscape:label="Third Station"
+       transform="matrix(1.7061429,0,0,1.7061429,68.558361,-31.968797)">
+      <ellipse
+         style="display:inline;fill:#4a4a4a;fill-opacity:1;stroke-width:0.0380524"
+         id="ellipse2805"
+         cx="24.965216"
+         cy="18.723909"
+         rx="16.643476"
+         ry="9.2543468"
+         inkscape:label="Bubble"
+         transform="translate(-1.2689655e-6)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.06917px;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+         x="25.059246"
+         y="19.174889"
+         id="text2817"
+         transform="translate(-1.2689655e-6)"
+         inkscape:label="Description"><tspan
+           sodipodi:role="line"
+           style="font-size:3.06917px;stroke:#ffffff;stroke-width:0.1;stroke-opacity:1"
+           x="25.059246"
+           y="19.174889"
+           id="tspan2815">Packages trays </tspan><tspan
+           sodipodi:role="line"
+           style="font-size:3.06917px;stroke:#ffffff;stroke-width:0.1;stroke-opacity:1"
+           x="25.059246"
+           y="23.011351"
+           id="tspan2827">for distribution</tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.02645833,0,0,0.02645833,-1.5471814,-3.4748137)"
+         id="text2809"
+         style="font-size:133.333px;text-align:center;white-space:pre;shape-inside:url(#rect2823);shape-padding:5.7517;display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+         x="329.71875"
+         y="0"
+         inkscape:label="Third Station"><tspan
+           x="578.2267"
+           y="721.74334"
+           id="tspan3891"><tspan
+             style="stroke:#ffffff"
+             id="tspan3889">Third Station</tspan></tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g3078"
+     inkscape:label="Layer 4"
+     style="display:inline"
+     transform="translate(44.944321,58.742127)">
+    <g
+       id="g3076"
+       inkscape:label="Outside"
+       transform="matrix(1.7061429,0,0,1.7061429,124.0919,24.151507)">
+      <ellipse
+         style="display:inline;fill:#4a4a4a;fill-opacity:1;stroke-width:0.0380524"
+         id="ellipse3064"
+         cx="24.965216"
+         cy="18.723909"
+         rx="16.643476"
+         ry="9.2543468"
+         inkscape:label="Bubble"
+         transform="translate(-1.2689655e-6)" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.06917px;text-align:center;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+         x="24.95779"
+         y="18.718344"
+         id="text3070"
+         inkscape:label="Description"><tspan
+           sodipodi:role="line"
+           style="font-size:3.06917px;stroke:#ffffff;stroke-width:0.1;stroke-opacity:1"
+           x="24.95779"
+           y="18.718344"
+           id="tspan3068">Distributes the </tspan><tspan
+           sodipodi:role="line"
+           style="font-size:3.06917px;stroke:#ffffff;stroke-width:0.1;stroke-opacity:1"
+           x="24.95779"
+           y="22.554806"
+           id="tspan3084">packages recieved</tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.02645833,0,0,0.02645833,-1.5471814,-3.4748137)"
+         id="text3074"
+         style="font-size:133.333px;text-align:center;white-space:pre;shape-inside:url(#rect3080);shape-padding:5.7517;display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"
+         x="329.71875"
+         y="0"
+         inkscape:label="Outside"><tspan
+           x="757.09994"
+           y="721.74334"
+           id="tspan3895"><tspan
+             style="stroke:#ffffff"
+             id="tspan3893">Outside</tspan></tspan></text>
+    </g>
+  </g>
+</svg>
