@@ -11,7 +11,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/")
 public class AnimalController {
-    private AnimalRepository repository;
+    private final AnimalRepository repository;
 
     public AnimalController(AnimalRepository repository) {
         this.repository = repository;
@@ -19,7 +19,7 @@ public class AnimalController {
 
     // get animal by id
     @GetMapping("/animals/{id}")
-    public Animal getOrder(@PathVariable Long id) {
+    public Animal getAnimal(@PathVariable Long id) {
         try {
             Optional<Animal> received = repository.get(id);
             return received.orElse(null);
@@ -30,11 +30,33 @@ public class AnimalController {
 
     // get animals by date
     @GetMapping("/animals/")
-    public List<Animal> getOrder(@RequestParam(value = "year", defaultValue = "2000") int year,
+    public List<Animal> getAnimals(@RequestParam(value = "year", defaultValue = "2000") int year,
                            @RequestParam(value = "month", defaultValue = "1") int month,
                            @RequestParam(value = "day", defaultValue = "1") int day) {
         try {
             Optional<List<Animal>> received = repository.get(LocalDateTime.of(year, month, day, 0, 0));
+            return received.orElse(null);
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    // Get animals by origin
+    @GetMapping("/animals/")
+    public List<Animal> getAnimals(@RequestParam(value = "origin") String origin) {
+        try {
+            Optional<List<Animal>> received = repository.get(origin);
+            return received.orElse(null);
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    // Create animal
+    @PostMapping("/animals/")
+    public Animal createAnimal(@RequestBody Animal animal) {
+        try {
+            Optional<Animal> received = repository.create(animal);
             return received.orElse(null);
         } catch (Exception e) {
             return null;
