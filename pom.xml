@@ -29,6 +29,25 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--JUnit 4 Spring boot tests -->
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.hamcrest</groupId>
+                    <artifactId>hamcrest-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <version>2.7.4</version>
+        </dependency>
+
         <!-- XML & Java -->
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>

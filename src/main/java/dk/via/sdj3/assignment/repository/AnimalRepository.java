@@ -13,7 +13,9 @@ public class AnimalRepository {
     // CRUD operations
     // Create
     public Optional<Animal> create(Animal animal) {
-        animalMap.put(animal.registrationNumber(), animal);
+        if (animal != null)
+            animalMap.put(animal.registrationNumber(), animal);
+
         return Optional.ofNullable(animal);
     }
 
@@ -24,15 +26,18 @@ public class AnimalRepository {
 
     // Get all animals by date
     public Optional<List<Animal>> get(LocalDateTime arrivalDate) {
-        List<Animal> foundAnimals = new ArrayList<>();
-        for (Animal a: animalMap.values()) {
-            if (a.storeDate().getYear() == arrivalDate.getYear() &&
-            a.storeDate().getDayOfYear() == arrivalDate.getDayOfYear()) {
-                foundAnimals.add(a);
+        if (arrivalDate != null) {
+            List<Animal> foundAnimals = new ArrayList<>();
+            for (Animal a: animalMap.values()) {
+                if (a.storeDate().getYear() == arrivalDate.getYear() &&
+                        a.storeDate().getDayOfYear() == arrivalDate.getDayOfYear()) {
+                    foundAnimals.add(a);
+                }
             }
+            return Optional.ofNullable(foundAnimals);
+        } else {
+            return Optional.empty();
         }
-
-        return Optional.ofNullable(foundAnimals);
     }
 
     // Get all animals by origin
