@@ -29,7 +29,7 @@ public class AnimalController {
     }
 
     // get animals by date
-    @GetMapping("/animals/")
+    @GetMapping("/animals/date/")
     public List<Animal> getAnimals(@RequestParam(value = "year", defaultValue = "2000") int year,
                            @RequestParam(value = "month", defaultValue = "1") int month,
                            @RequestParam(value = "day", defaultValue = "1") int day) {
@@ -42,8 +42,8 @@ public class AnimalController {
     }
 
     // Get animals by origin
-    @GetMapping("/animals/")
-    public List<Animal> getAnimals(@RequestParam(value = "origin") String origin) {
+    @GetMapping("/animals/origin/{origin}")
+    public List<Animal> getAnimals(@PathVariable String origin) {
         try {
             Optional<List<Animal>> received = repository.get(origin);
             return received.orElse(null);
