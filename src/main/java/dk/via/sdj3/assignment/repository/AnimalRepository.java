@@ -8,7 +8,7 @@ import java.util.*;
 
 @Repository
 public class AnimalRepository {
-    private static final Map<Long, Animal> animalMap = new HashMap<>();
+    private final Map<Long, Animal> animalMap = new HashMap<>();
 
     // CRUD operations
     // Create
