@@ -1,6 +1,6 @@
 package dk.via.sdj3.assignment.controller;
 
-import dk.via.sdj3.assignment.model.Animal;
+import dk.via.sdj3.assignment.rest.model.Animal;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;

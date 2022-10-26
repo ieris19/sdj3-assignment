@@ -115,7 +115,7 @@
                             <protocVersion>3.21.4</protocVersion>
                             <addProtoSources>inputs</addProtoSources>
                             <inputDirectories>
-                                <include>src/main/proto</include>
+                                <include>src/main/protobuf</include>
                             </inputDirectories>
 
                             <outputTargets>

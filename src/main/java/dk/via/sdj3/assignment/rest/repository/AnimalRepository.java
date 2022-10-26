@@ -1,6 +1,6 @@
-package dk.via.sdj3.assignment.repository;
+package dk.via.sdj3.assignment.rest.repository;
 
-import dk.via.sdj3.assignment.model.Animal;
+import dk.via.sdj3.assignment.rest.model.Animal;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;

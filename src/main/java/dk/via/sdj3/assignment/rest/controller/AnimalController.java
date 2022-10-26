@@ -1,7 +1,7 @@
-package dk.via.sdj3.assignment.controller;
+package dk.via.sdj3.assignment.rest.controller;
 
-import dk.via.sdj3.assignment.model.Animal;
-import dk.via.sdj3.assignment.repository.AnimalRepository;
+import dk.via.sdj3.assignment.rest.model.Animal;
+import dk.via.sdj3.assignment.rest.repository.AnimalRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;

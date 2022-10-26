@@ -1,4 +1,4 @@
-package dk.via.sdj3.assignment.model;
+package dk.via.sdj3.assignment.rest.model;
 
 import java.time.LocalDateTime;
 

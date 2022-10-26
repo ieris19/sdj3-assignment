@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "dk.via.sdj3.assignment.grpc.proto";
+
+service SlaughterhouseService {
+    rpc getAnimalsFor(QueryId) returns (ResponseIds) {}
+    rpc getProductsFor(QueryId) returns (ResponseIds) {}
+}
+
+message QueryId {
+    sint64 identificationNumber = 1;
+}
+
+message ResponseIds {
+    repeated sint64 identificationNumber = 1;
+}
