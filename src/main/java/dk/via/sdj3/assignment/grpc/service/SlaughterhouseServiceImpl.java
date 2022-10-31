@@ -1,9 +1,12 @@
 package dk.via.sdj3.assignment.grpc.service;
 
+import dk.via.sdj3.assignment.AssignmentApplication;
 import dk.via.sdj3.assignment.grpc.proto.QueryId;
 import dk.via.sdj3.assignment.grpc.proto.ResponseIds;
 import dk.via.sdj3.assignment.grpc.proto.SlaughterhouseServiceGrpc;
 import io.grpc.stub.StreamObserver;
+
+import java.sql.SQLException;
 
 /**
  * This class implements the gRPC service for the slaughterhouse.
@@ -46,7 +49,24 @@ public class SlaughterhouseServiceImpl extends SlaughterhouseServiceGrpc.Slaught
 			default -> throw new IllegalArgumentException("Unexpected value: " + returned);
 		}
 
-		String sql = String.format("SELECT %1$s FROM AnimalInProduct WHERE %2$s = %3$s;", colToGet, colToCompare, id);
-		return ResponseIds.newBuilder().build();
+		//String sql = String.format("SELECT %1$s FROM AnimalInProduct WHERE %2$s = %3$s;", colToGet, colToCompare, id);
+		var response = ResponseIds.newBuilder();
+
+		try {
+			var connection = AssignmentApplication.database.getConnection();
+			var statement = connection.prepareStatement("SELECT ? FROM AnimalInProduct WHERE ? = ?");
+			statement.setString(1, colToGet);
+			statement.setString(2, colToCompare);
+			statement.setLong(3, id);
+
+			var queriedResults = statement.executeQuery();
+			while (queriedResults.next()) {
+				response.addIdentificationNumber(queriedResults.getLong(colToGet));
+			}
+		} catch (SQLException e) {
+			System.out.println("Database SQL Error!");
+		}
+
+		return response.build();
 	}
 }
