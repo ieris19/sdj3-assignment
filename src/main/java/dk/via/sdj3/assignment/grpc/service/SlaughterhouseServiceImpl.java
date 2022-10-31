@@ -44,30 +44,31 @@ public class SlaughterhouseServiceImpl extends SlaughterhouseServiceGrpc.Slaught
 	/**
 	 * This method is called to process server requests.
 	 */
-	private ResponseIds processRequest(QueryId request, String returned) {
+	protected ResponseIds processRequest(QueryId request, String returned) {
 		long id = request.getIdentificationNumber();
 		String colToGet; // column to get
 		String colToCompare; // column to compare
 		switch (returned) {
-			case "animal" -> {colToGet = "animalId"; colToCompare = "productId";}
-			case "product" -> {colToGet = "productId"; colToCompare = "animalId";}
+			case "animal" -> {colToGet = "animalid"; colToCompare = "productid";}
+			case "product" -> {colToGet = "productid"; colToCompare = "animalid";}
 			default -> throw new IllegalArgumentException("Unexpected value: " + returned);
 		}
 
-		//String sql = String.format("SELECT %1$s FROM AnimalInProduct WHERE %2$s = %3$s;", colToGet, colToCompare, id);
+		String sqlStatement = String.format("SELECT '%1$s' FROM animalinproduct WHERE '%2$s' = '%3$s';", colToGet, colToCompare, id);
+		System.out.println(sqlStatement);
 		ResponseIds.Builder response = ResponseIds.newBuilder();
-
 		try (Connection connection = DatabaseConnection.getConnection()) {
 			PreparedStatement statement = connection.prepareStatement("SELECT ? FROM AnimalInProduct WHERE ? = ?");
 			statement.setString(1, colToGet);
 			statement.setString(2, colToCompare);
 			statement.setLong(3, id);
-
+			System.out.println(statement);
 			ResultSet queriedResults = statement.executeQuery();
 			while (queriedResults.next()) {
 				response.addIdentificationNumber(queriedResults.getLong(colToGet));
 			}
 		} catch (SQLException e) {
+			e.printStackTrace();
 			System.out.println("Database SQL Error!");
 		}
 

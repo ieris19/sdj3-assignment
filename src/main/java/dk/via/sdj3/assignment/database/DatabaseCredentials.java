@@ -46,7 +46,7 @@ public class DatabaseCredentials {
 	}
 
 	public String getURL() {
-		return connectivity + ":" + dbms + "://" + hostName + ":" + portNumber + "/" + dbName + "?currentSchema=" + schema;
+		return "jdbc:postgresql://" + hostName + ":" + portNumber + "/" + dbName + "?currentSchema=" + schema;
 	}
 
 	@Override public String toString() {

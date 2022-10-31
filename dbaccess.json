@@ -1,10 +1,10 @@
 {
-  "username":"user",
+  "username":"postgres",
   "password":"password",
   "connectivity":"jdbc",
   "dbms":"postgressql",
   "hostName":"localhost",
   "portNumber":"5432",
-  "schema":"schema",
-  "dbName":"db"
+  "dbName":"slaughterhouse",
+  "schema":"slaughterhouse"
 }
