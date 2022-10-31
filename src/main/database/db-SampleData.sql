@@ -1,0 +1,8 @@
+SET SCHEMA 'slaughterhouse';
+
+
+INSERT INTO animal VALUES (1231214);
+
+INSERT INTO product VALUES (124151);
+
+INSERT INTO animalinproduct VALUES (124151, 1231214)
