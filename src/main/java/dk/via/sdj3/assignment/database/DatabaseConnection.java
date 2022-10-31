@@ -1,42 +1,30 @@
 package dk.via.sdj3.assignment.database;
 
+import java.io.FileNotFoundException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Properties;
 
 public class DatabaseConnection {
-    private final String url = "postgres://";
-    private final String username = "postgres";
-    private final String password = "041199";
+	private static Connection connection;
 
-    private final String portNumber = "5432";
-    private String dbms = "";
-    private String dbName = "Animal";
-
-
-    public Connection getConnection() throws SQLException {
-
-        Connection connection = null;
-        Properties connectionProps = new Properties();
-        connectionProps.put("user", this.username);
-        connectionProps.put("password", this.password);
-
-        if (this.dbms.equals("postgresql")) {
-            connection = DriverManager.getConnection(
-                    "jdbc:" + this.dbms + "://" +
-                            this.url +
-                            ":" + this.portNumber + "/",
-                    connectionProps);
-        } else if (this.dbms.equals("derby")) {
-            connection = DriverManager.getConnection(
-                    "jdbc:" + this.dbms + ":" +
-                            this.dbName +
-                            ";create=true",
-                    connectionProps);
-        }
-        System.out.println("Connected to database");
-        return connection;
-    }
-
+	/**
+	 * Creates connection for the driver manager
+	 *
+	 * @return A connection to our database
+	 *
+	 * @throws SQLException if an error occurs on the database
+	 */
+	public static Connection getConnection() throws SQLException {
+		if (connection == null) {
+			try {
+				DatabaseCredentials credentials = DatabaseCredentials.parseFile();
+				connection = DriverManager.getConnection(credentials.getURL(), credentials.getUsername(),
+																								 credentials.getPassword());
+			} catch (FileNotFoundException e) {
+				throw new IllegalStateException("No database credentials found", e);
+			}
+		}
+		return connection;
+	}
 }

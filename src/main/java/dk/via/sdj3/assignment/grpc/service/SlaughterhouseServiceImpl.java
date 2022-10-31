@@ -1,16 +1,21 @@
 package dk.via.sdj3.assignment.grpc.service;
 
-import dk.via.sdj3.assignment.AssignmentApplication;
+import dk.via.sdj3.assignment.database.DatabaseConnection;
 import dk.via.sdj3.assignment.grpc.proto.QueryId;
 import dk.via.sdj3.assignment.grpc.proto.ResponseIds;
 import dk.via.sdj3.assignment.grpc.proto.SlaughterhouseServiceGrpc;
 import io.grpc.stub.StreamObserver;
+import org.lognet.springboot.grpc.GRpcService;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
  * This class implements the gRPC service for the slaughterhouse.
  */
+@GRpcService
 public class SlaughterhouseServiceImpl extends SlaughterhouseServiceGrpc.SlaughterhouseServiceImplBase {
 	/**
 	 * This method is called when the client sends a request to the server to get the ids of all animals involved in a
@@ -50,16 +55,15 @@ public class SlaughterhouseServiceImpl extends SlaughterhouseServiceGrpc.Slaught
 		}
 
 		//String sql = String.format("SELECT %1$s FROM AnimalInProduct WHERE %2$s = %3$s;", colToGet, colToCompare, id);
-		var response = ResponseIds.newBuilder();
+		ResponseIds.Builder response = ResponseIds.newBuilder();
 
-		try {
-			var connection = AssignmentApplication.database.getConnection();
-			var statement = connection.prepareStatement("SELECT ? FROM AnimalInProduct WHERE ? = ?");
+		try (Connection connection = DatabaseConnection.getConnection()) {
+			PreparedStatement statement = connection.prepareStatement("SELECT ? FROM AnimalInProduct WHERE ? = ?");
 			statement.setString(1, colToGet);
 			statement.setString(2, colToCompare);
 			statement.setLong(3, id);
 
-			var queriedResults = statement.executeQuery();
+			ResultSet queriedResults = statement.executeQuery();
 			while (queriedResults.next()) {
 				response.addIdentificationNumber(queriedResults.getLong(colToGet));
 			}

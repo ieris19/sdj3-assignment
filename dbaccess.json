@@ -1,0 +1,10 @@
+{
+  "username":"user",
+  "password":"password",
+  "connectivity":"jdbc",
+  "dbms":"postgressql",
+  "hostName":"localhost",
+  "portNumber":"5432",
+  "schema":"schema",
+  "dbName":"db"
+}
