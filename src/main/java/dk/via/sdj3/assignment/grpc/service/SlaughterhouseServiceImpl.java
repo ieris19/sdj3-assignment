@@ -17,7 +17,7 @@ public class SlaughterhouseServiceImpl extends SlaughterhouseServiceGrpc.Slaught
 	 * @param responseObserver The response observer to send the response to.
 	 */
 	@Override public void getAnimalsFor(QueryId request, StreamObserver<ResponseIds> responseObserver) {
-		responseObserver.onNext(processRequest(request, "product"));
+		responseObserver.onNext(processRequest(request, "animal"));
 		responseObserver.onCompleted();
 	}
 
@@ -29,21 +29,24 @@ public class SlaughterhouseServiceImpl extends SlaughterhouseServiceGrpc.Slaught
 	 * @param responseObserver The response observer to send the response to.
 	 */
 	@Override public void getProductsFor(QueryId request, StreamObserver<ResponseIds> responseObserver) {
-		responseObserver.onNext(processRequest(request, "animal"));
+		responseObserver.onNext(processRequest(request, "product"));
 		responseObserver.onCompleted();
 	}
 
 	/**
 	 * This method is called to process server requests.
 	 */
-	private ResponseIds processRequest(QueryId request, String table) {
+	private ResponseIds processRequest(QueryId request, String returned) {
 		long id = request.getIdentificationNumber();
-		String col = switch (table) {
-			case "animal" -> "animal_id";
-			case "product" -> "product_id";
-			default -> throw new IllegalArgumentException("Unexpected value: " + table);
-		};
-		String sql = String.format("SELECT %1$s FROM %2$s WHERE %3$s = %4$s;", col, table, col, id);
+		String colToGet; // column to get
+		String colToCompare; // column to compare
+		switch (returned) {
+			case "animal" -> {colToGet = "animalId"; colToCompare = "productId";}
+			case "product" -> {colToGet = "productId"; colToCompare = "animalId";}
+			default -> throw new IllegalArgumentException("Unexpected value: " + returned);
+		}
+
+		String sql = String.format("SELECT %1$s FROM AnimalInProduct WHERE %2$s = %3$s;", colToGet, colToCompare, id);
 		return ResponseIds.newBuilder().build();
 	}
 }
