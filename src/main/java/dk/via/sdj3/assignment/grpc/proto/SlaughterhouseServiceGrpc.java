@@ -1,5 +1,7 @@
 package dk.via.sdj3.assignment.grpc.proto;
 
+import dk.via.sdj3.assignment.Server.DBConnection.SQL;
+
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
@@ -124,7 +126,9 @@ public final class SlaughterhouseServiceGrpc {
    */
   public static abstract class SlaughterhouseServiceImplBase implements io.grpc.BindableService {
 
-    /**
+    protected SQL sql;
+
+      /**
      */
     public void getAnimalsFor(dk.via.sdj3.assignment.grpc.proto.QueryId request,
         io.grpc.stub.StreamObserver<dk.via.sdj3.assignment.grpc.proto.ResponseIds> responseObserver) {
