@@ -1,5 +1,7 @@
 package dk.via.sdj3.assignment.grpc.service;
 
+import dk.via.sdj3.assignment.Server.AppConnection.SlaughterhouseServiceImpl;
+import dk.via.sdj3.assignment.Server.AppConnection.SlaughterhouseServiceImplBuilder;
 import dk.via.sdj3.assignment.grpc.proto.QueryId;
 import dk.via.sdj3.assignment.grpc.proto.ResponseIds;
 import org.junit.jupiter.api.BeforeAll;
@@ -15,7 +17,7 @@ class SlaughterhouseServiceTest {
 	private static SlaughterhouseServiceImpl service;
 
 	@BeforeAll static void setUp() {
-		service = new SlaughterhouseServiceImpl();
+		service = new SlaughterhouseServiceImplBuilder().createSlaughterhouseServiceImpl();
 		sampleAnimalID = 1231214;
 		sampleProductID = 124151;
 	}

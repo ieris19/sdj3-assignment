@@ -1,11 +1,13 @@
-package dk.via.sdj3.assignment.grpc.service;
+package dk.via.sdj3.assignment.Server.AppConnection;
 
 import dk.via.sdj3.assignment.database.DatabaseConnection;
 import dk.via.sdj3.assignment.grpc.proto.QueryId;
 import dk.via.sdj3.assignment.grpc.proto.ResponseIds;
+import dk.via.sdj3.assignment.Server.DBConnection.SQL;
 import dk.via.sdj3.assignment.grpc.proto.SlaughterhouseServiceGrpc;
 import io.grpc.stub.StreamObserver;
 import org.lognet.springboot.grpc.GRpcService;
+import org.springframework.context.annotation.Configuration;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -16,7 +18,15 @@ import java.sql.SQLException;
  * This class implements the gRPC service for the slaughterhouse.
  */
 @GRpcService
+@Configuration
 public class SlaughterhouseServiceImpl extends SlaughterhouseServiceGrpc.SlaughterhouseServiceImplBase {
+	public SlaughterhouseServiceImpl(SQL sql) {
+		this.sql = sql;
+	}
+
+	public SlaughterhouseServiceImpl() {
+	}
+
 	/**
 	 * This method is called when the client sends a request to the server to get the ids of all animals involved in a
 	 * specific product.
